@@ -1,0 +1,122 @@
+:root{
+    --clr-blue: #458ff6;
+    --clr-black: #000;
+    --clr-white: #fff;
+    --clr-gray: #7d7987;
+    --clr-dark-blue: #233348;
+    --clr-dark-purple: #1f1534;
+    --font-family-mulish: 'Mulish', sans-serif;
+    --transition-default: all 300ms ease-in-out;
+}
+
+html{
+    scroll-behavior: smooth;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* some resets & configuration */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    transition: var(--transition-default);
+}
+
+a:focus, a:hover{
+    color: unset;
+}
+
+img, picture, video, canvas, svg{
+    max-width: 100%;
+    display: block;
+}
+input, button, textarea, select{
+    font: inherit;
+    outline: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+textarea{
+    resize: none;
+}
+img, object, embed, video{
+    max-width: 100%;
+}
+
+body{
+    font-family: var(--font-family-mulish);
+    line-height: 1.6;
+    height: 100%;
+    font-weight: 300;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* services */
+.sc-services{
+    padding-top: 179px;
+    padding-bottom: 115.9px;
+    position: relative;
+    overflow: hidden;
+}
+.sc-services .content-wrapper{
+    max-width: 670px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sc-services .content-wrapper .text{
+    line-height: 1.6667;
+}
+.services-list{
+    margin-top: calc(83px - 18.5px);
+    margin-bottom: -18.5px;
+    margin-right: -18.5px;
+    margin-left: -18.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-item{
+    box-shadow: 10px 40px 50px 0px #e5e9f666;
+    background-color: var(--clr-white);
+    border-radius: 20px;
+    width: 350px;
+    min-height: 354px;
+    padding: 46px 38px;
+    margin: 18.5px;
+    width: calc(33.3333% - 37px);
+    transition: var(--transition-default);
+}
+.services-item:hover{
+    box-shadow:  rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+.services-item .item-title{
+    font-size: 24px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+.services-shape{
+    position: absolute;
+    z-index: -1;
+    top: 290px;
+    left: -70px;
+}
+.services-main-btn{
+    margin-top: 69px;
+}
